@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="utf-8">
+      <title>IoT-Bootstap </title>
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+   </head>
+   <body >
+    <h1 style="text-align: center;"> Đặng Phương Năm </h1>
+    <h2 class="small" style="font-size: 30px ; text-align: center; background-color:rgb(242, 135, 250) ; height: 100px; border-radius: 20px; padding-top: 25px;"> Bảng trạng thái</h2>
+      <div class= "container-fluid">
+         <div class= "row" style=" height: 100px;">
+            <div class ="col-sm-4 " style="background-color: lightgreen; text-align: center; border-radius: 20px;" id="temp">
+              <p class="small" style="font-size: 30px; padding-top: 25px;">9</p>
+            </div>
+            <div class ="col-sm-4 " style="background-color: lightcyan; text-align: center; border-radius: 20px;" id="hum">
+              <p class="small" style="font-size: 30px; padding-top: 25px;">34</p>
+            </div>
+            <div class ="col-sm-4 " style="background-color:lightsteelblue; text-align: center; border-radius: 20px;" id="light">
+               <p class="small" style="font-size: 30px; padding-top: 25px; ">99</p>
+            </div>
+         </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-8">
+          <img src="https://cdn.hikb.at/charts/average-monthly-rain/danang-average-monthly-rain.png" height="450px" width="100%">
+        </div>
+        <div class="col-sm-4">
+          <p class="font-weight-bold">
+            <div class="col-sm-12" id="backgroud1" style="background-color: rgb(229, 173, 230) ; height:170px; border-radius: 20px; font-size: 20px; text-align: center; padding-top: 40px;">Công tắc 1</p>
+            <button type="button" class="btn btn-outline-success" onclick="ClickOn1()" id="BtnOn1">On</button>
+            <button type="button" class="btn btn-outline-danger" onclick="ClickOff1()" id="BtnOff1">Off</button>
+            </div>
+          <p class="font-weight-bold">
+            <div class="col-sm-12" id="backgroud2" style="background-color:rgb(240, 135, 250); height: 170px; border-radius: 20px; font-size: 20px; text-align: center; padding-top: 40px;">Công tắc 2</p>
+            <button type="button" class="btn btn-outline-success " onclick="ClickOn2()" id="BtnOn2">On</button>
+            <button type="button" class="btn btn-outline-danger" onclick="ClickOff2()" id="BtnOff2">Off</button>
+            </div>
+        </div>
+      </div>
+      </div>
+      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+      <script src="./main.js"></script>
+   </body>
+</html>
